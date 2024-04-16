@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './UserList.css';
 
-const UserList = () => {
+const UserList = ({ className }) => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-
         const getData = async () => {
             setLoading(true);
             // имитация долгой загрузки
@@ -39,7 +38,7 @@ const UserList = () => {
     }, [])
 
     return (
-        <ul className='user__list'>
+        <ul className={['user__list', className].join(' ')}>
             <div>{loading}</div>
             {
                 loading ?
