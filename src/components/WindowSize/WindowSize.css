@@ -1,0 +1,10 @@
+.window__size {
+    border-radius: 15px;
+    border: 1px solid #999999;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
