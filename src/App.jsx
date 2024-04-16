@@ -1,9 +1,10 @@
 import './App.css'
+import CountdownTimer from '#components/CountdownTimer/CountdownTimer'
 
 function App() {
   return (
     <div className='container'>
-      Hello World!
+      <CountdownTimer />
     </div>
   )
 }
